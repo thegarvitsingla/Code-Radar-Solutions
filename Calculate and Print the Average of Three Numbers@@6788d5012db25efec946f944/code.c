@@ -9,7 +9,7 @@ int main() {
    scanf("%i",&a);
    scanf("%i",&b);
    scanf("%i",&c);
-   int sum = a + b+c;
+   int sum = a+b+c;
    int avg = sum / 3;
    printf("Average %f",sum);
 }
