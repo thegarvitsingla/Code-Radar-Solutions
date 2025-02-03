@@ -3,6 +3,6 @@
 
 int main() {
     double inp;
-    scanf("$lf",&inp);
+    scanf("%lf",&inp);
     printf("You entered: %.4f",inp);
 }
