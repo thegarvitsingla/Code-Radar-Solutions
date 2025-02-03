@@ -11,5 +11,5 @@ int main() {
    scanf("%i",&c);
    int sum = a+b+c;
    int avg = sum / 3;
-   printf("Average %d",sum);
+   printf("Average %d",avg);
 }
