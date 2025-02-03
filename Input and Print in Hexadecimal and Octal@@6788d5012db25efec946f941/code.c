@@ -4,5 +4,5 @@
 int main() {
     int a;
     scanf("%i",&a);
-    printf("Hexadecimal: %x",a);
+    printf("Hexadecimal: %X",a);
 }
