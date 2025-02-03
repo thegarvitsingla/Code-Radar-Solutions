@@ -7,5 +7,5 @@ int main() {
     int b;
     scanf("%i",&a);
     scanf("%i",&b);
-    printf("Sum: %i",a+b)
+    printf("Sum: %i",a+b);
 }
