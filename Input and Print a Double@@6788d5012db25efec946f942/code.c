@@ -2,7 +2,7 @@
 
 
 int main() {
-    float inp;
-    scanf("%f",&inp);
+    double inp;
+    scanf("$lf",&inp);
     printf("You entered: %.4f",inp);
 }
