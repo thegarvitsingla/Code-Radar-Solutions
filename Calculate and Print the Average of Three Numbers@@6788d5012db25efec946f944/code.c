@@ -10,6 +10,6 @@ int main() {
    scanf("%i",&b);
    scanf("%i",&c);
    int sum = a+b+c;
-   int avg = sum / 3;
-   printf("Average %d",avg);
+   float avg = sum / 3;
+   printf("Average %.2f",avg);
 }
