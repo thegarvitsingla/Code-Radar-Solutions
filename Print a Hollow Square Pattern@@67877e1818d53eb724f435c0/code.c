@@ -9,6 +9,7 @@ int main (){
             for (int j =0; j<number;j++){
                 printf("*");
             }
+            printf("\n");
         }
     }
 }
