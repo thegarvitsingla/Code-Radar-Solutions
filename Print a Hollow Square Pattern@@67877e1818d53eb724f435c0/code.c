@@ -14,9 +14,9 @@ int main (){
         else{
             for (int j=1 ; j<=number ,j++){
                 if (j == 1 || j==number){
-                    printf("*")
+                    printf("*");
                 }else{
-                    printf(" ")
+                    printf(" ");
                 }
             }
             printf("\n");
