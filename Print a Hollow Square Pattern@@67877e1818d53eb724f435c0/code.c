@@ -11,5 +11,15 @@ int main (){
             }
             printf("\n");
         }
+        else{
+            for (int j=1 ; j<=number ,j++){
+                if (j == 1 || j==number){
+                    printf("*")
+                }else{
+                    printf(" ")
+                }
+            }
+            printf("\n");
+        }
     }
 }
