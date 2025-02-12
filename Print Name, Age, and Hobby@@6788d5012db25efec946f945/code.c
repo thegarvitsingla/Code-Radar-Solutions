@@ -1,17 +1,12 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char name[50];
     int age;
     char hobby[50];
-    
-    // %s is used for strings, not %str
-    scanf("%s %d %s", name, &age, hobby);
-    
-    // Use %s for strings, and add newlines for better formatting
-    printf("Name: %s\n", name);
-    printf("Age: %d\n", age);
-    printf("Hobby: %s\n", hobby);
-    
-    return 0;
+    scanf("%s %d %s",name,&age,hobby);
+    printf("Name: %s",name);
+    printf("Age: %d",age);
+    printf("Hobby: %s",hobby);
 }
