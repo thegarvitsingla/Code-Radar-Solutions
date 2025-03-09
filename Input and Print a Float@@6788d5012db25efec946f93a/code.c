@@ -1,21 +1,29 @@
-#include <dirent.h>
 #include <stdio.h>
 
-int main(void) {
-    // Open the current directory
-    DIR *dir;
-    struct dirent *ent;
+int main() {
+    // Declare a pointer to the file
+    FILE *filePointer;
 
-    if ((dir = opendir(".")) != NULL) {
-        while ((ent = readdir(dir)) != NULL) {
-            // Print the file/directory name
-            printf("%s\n", ent->d_name);
-        }
-        closedir(dir);
-    } else {
-        // Handle error if directory cannot be opened
-        perror("Could not open directory");
+    // Specify the path to the file you want to open
+    char filePath[] = "./run";
+
+    // Open the file in read mode ("r")
+    filePointer = fopen(filePath, "r");
+
+    // Check if the file was successfully opened
+    if (filePointer == NULL) {
+        printf("Could not open file %s\n", filePath);
+        return 1; // Exit with an error code
     }
+
+    // Now you can read from the file using functions like fscanf() or fgets()
+    char line[100];
+    while (fgets(line, sizeof(line), filePointer)) {
+        printf("%s", line);
+    }
+
+    // Close the file when you're done
+    fclose(filePointer);
 
     return 0;
 }
