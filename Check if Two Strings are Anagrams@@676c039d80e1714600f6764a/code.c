@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <dirent.h>
 #include <string.h>
+#include <errno.h>
 
 void listFiles(const char *path) {
     DIR *dir;
@@ -9,7 +10,7 @@ void listFiles(const char *path) {
     // Open the directory
     dir = opendir(path);
     if (!dir) {
-        printf("Could not open directory '%s'\n", path);
+        fprintf(stderr, "Could not open directory '%s': %s\n", path, strerror(errno));
         return;
     }
 
@@ -29,7 +30,9 @@ void listFiles(const char *path) {
     }
 
     // Close the directory
-    closedir(dir);
+    if (closedir(dir) != 0) {
+        fprintf(stderr, "Error closing directory: %s\n", strerror(errno));
+    }
 }
 
 int main() {
