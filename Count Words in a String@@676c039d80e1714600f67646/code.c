@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <dirent.h>
+
+int main() {
+    struct dirent *entry;
+    DIR *directory = opendir(".."); // Open parent directory
+
+    if (directory == NULL) {
+        printf("Could not open parent directory\n");
+        return 1;
+    }
+
+    printf("Files in the parent directory:\n");
+    while ((entry = readdir(directory)) != NULL) {
+        printf("%s\n", entry->d_name);
+    }
+
+    closedir(directory);
+    return 0;
+}
