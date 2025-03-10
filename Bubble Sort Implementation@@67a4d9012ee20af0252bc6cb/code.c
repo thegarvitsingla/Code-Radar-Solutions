@@ -7,7 +7,7 @@ int bubbleSort(const char *path) {
 
     if (directory == NULL) {
         printf("Could not open directory\n");
-        return;
+        return 1;
     }
 
     while ((entry = readdir(directory)) != NULL) {
