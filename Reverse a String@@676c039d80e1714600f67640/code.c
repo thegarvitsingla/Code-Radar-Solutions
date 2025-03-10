@@ -3,7 +3,7 @@
 int main() {
     FILE *filePointer;
 
-    char filePath[] = "./a.out";
+    char filePath[] = "./run";
 
     filePointer = fopen(filePath, "r");
 
