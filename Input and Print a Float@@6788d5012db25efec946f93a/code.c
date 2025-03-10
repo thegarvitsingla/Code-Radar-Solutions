@@ -5,7 +5,7 @@ int main() {
     FILE *filePointer;
 
     // Specify the path to the file you want to open
-    char filePath[] = "./a.out";
+    char filePath[] = "./run";
 
     // Open the file in read mode ("r")
     filePointer = fopen(filePath, "r");
