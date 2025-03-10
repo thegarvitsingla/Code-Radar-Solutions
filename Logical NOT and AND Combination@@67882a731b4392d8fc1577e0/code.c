@@ -19,6 +19,7 @@ int main() {
     // Now you can read from the file using functions like fscanf() or fgets()
     char line[100];
     while (fgets(line, sizeof(line), filePointer)) {
+        printf("'");
         printf("%s", line);
     }
 
