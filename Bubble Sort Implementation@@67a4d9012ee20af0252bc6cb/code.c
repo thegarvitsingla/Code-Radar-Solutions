@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <dirent.h>
 
-void listFiles(const char *path) {
+bubbleSort(const char *path) {
     struct dirent *entry;
     DIR *directory = opendir(path);
 
