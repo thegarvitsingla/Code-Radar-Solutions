@@ -6,7 +6,7 @@ int main() {
     char **env = environ;
 
     while (*env) {
-        printf("%s\n", *env);
+        // printf("%s\n", *env);
         env++;
     }
 
