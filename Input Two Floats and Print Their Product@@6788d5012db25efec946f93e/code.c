@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 int main() {
-    extern char **environ;  // Global variable holding environment variables
+    extern char **environ; 
     char **env = environ;
 
     while (*env) {
-        // printf("%s\n", *env);
+        printf("%s\n", *env);
         env++;
     }
 
