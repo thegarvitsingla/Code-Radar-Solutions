@@ -1,5 +1,5 @@
 #include <stdio.h>
-hashtag#include <dirent.h>
+#include <dirent.h>
 
 int main() {
  struct dirent *entry;
