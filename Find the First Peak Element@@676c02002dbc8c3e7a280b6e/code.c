@@ -4,7 +4,7 @@
 
 int main (void){
     int size;
-     int peak;
+     int peak = -1;
     scanf("%d",&size);
     int list[size];
     for (int j = 0 ; j < size ; j++){
