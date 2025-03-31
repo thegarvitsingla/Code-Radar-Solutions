@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main (void){
+    int size;
+    scanf("%d",&size);
+    int list[size];
+    for (int i = 0 ; i < size ; i ++){
+        scanf("%d",&list[i]);
+    }
+
+    int least =  list[0];
+    int max = list[0];
+    for (int j =0 ; j< size ; j++){
+        if (list[i] > max){
+            max = list[i];
+        }
+        if (list[i] < min){
+            min  = list[i];
+        }
+    }
+}
