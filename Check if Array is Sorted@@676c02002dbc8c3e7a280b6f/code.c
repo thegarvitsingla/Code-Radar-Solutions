@@ -14,7 +14,7 @@ int main (void){
     
     for (int k = 0 ; k < size ; k){
         int first = list[0];
-        if (first > list[i]){
+        if (first > list[k]){
             issorted = false;
         }
     }
