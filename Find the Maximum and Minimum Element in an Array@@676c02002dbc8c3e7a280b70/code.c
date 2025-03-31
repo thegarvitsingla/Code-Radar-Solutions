@@ -10,7 +10,7 @@ int main (void){
 
     int least =  list[0];
     int max = list[0];
-    for (int j =0 ; j< size ; j++){
+    for (int i =0 ; i< size ; i++){
         if (list[i] > max){
             max = list[i];
         }
