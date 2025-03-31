@@ -12,13 +12,13 @@ int main (void){
     scanf("%d",&list[i]);
    }
     
-    for (int k = 0 ; k < size ; k){
+    for (int k = 0 ; k < size ; k++){
         int first = list[0];
         if (first > list[k]){
             issorted = false;
         }
     }
-    printf("%b",issorted);
+    printf("%d",issorted);
     // if (issorted){
     //     printf("Sorted");
     // }else{
