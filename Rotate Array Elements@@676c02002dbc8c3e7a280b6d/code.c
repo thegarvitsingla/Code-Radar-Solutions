@@ -11,9 +11,16 @@ int main (void){
         scanf("%d",&list[i]);
     }
     scanf("%d",&positions);
-    for (int j = 0 ; j < size ; j ++ ){
-        int num = list[j];
-        printf("%d\n",num);
+    
+    for (int d = 0 ; d < positions ; j++){
+        int last  = list[size-1];
+        for (int k = 0 ; k < size ; k++){
+            list[k + 1] = list[k];
+        }
+        list[0] = last;
     }
-    printf("%d positiond is ",positions);
+
+    for (int m = 0; m< size ; m++){
+        printf("%d",list[m]);
+    }
 }
