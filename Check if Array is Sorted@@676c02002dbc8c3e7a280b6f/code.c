@@ -18,10 +18,11 @@ int main (void){
             issorted = false;
         }
     }
-    if (issorted){
-        printf("Sorted");
-    }else{
-        printf("Not Sorted");
-    }
+    printf("%b",issorted);
+    // if (issorted){
+    //     printf("Sorted");
+    // }else{
+    //     printf("Not Sorted");
+    // }
   
 }
