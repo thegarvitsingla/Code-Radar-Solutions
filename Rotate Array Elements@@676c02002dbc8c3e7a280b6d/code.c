@@ -14,8 +14,11 @@ int main (void){
     
     for (int d = 0 ; d < positions ; d++){
         int last  = list[size-1];
-        for (int k = 0 ; k < size ; k++){
-            list[k + 1] = list[k];
+        for (int k = size -1 ; k >  0 ; k--){
+            // list[k + 1] = list[k];
+            list[k] = list [k-1];
+            
+
         }
         list[0] = last;
     }
