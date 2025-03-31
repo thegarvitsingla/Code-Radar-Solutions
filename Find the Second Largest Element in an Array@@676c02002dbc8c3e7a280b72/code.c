@@ -17,8 +17,8 @@ int main() {
         }
     }
     for (int j = 0 ; j<size ; j++){
-        if (list[i] > second){
-            second = list[i];
+        if (list[j] > second){
+            second = list[j];
 
         }
     }
