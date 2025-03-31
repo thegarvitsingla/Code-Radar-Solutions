@@ -19,7 +19,7 @@ int main() {
     }
     for (int i = 0; i < size ; i ++){
         if (largest == list[i]){
-            list[i] = 0;
+            list[i] = null;
             break;
         }
     }
