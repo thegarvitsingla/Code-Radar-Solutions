@@ -1,29 +1,27 @@
 #include <stdio.h>
 
 int main() {
-    // Declare a pointer to the file
-    FILE *filePointer;
-
-    // Specify the path to the file you want to open
-    char filePath[] = "./a.out";
-
-    // Open the file in read mode ("r")
-    filePointer = fopen(filePath, "r");
-
-    // Check if the file was successfully opened
-    if (filePointer == NULL) {
-        printf("Could not open file %s\n", filePath);
-        return 1; // Exit with an error code
+    
+    int size;
+    scanf("%d",&size);
+    int list[50];
+    for (int i = 0; i <size ; i++){
+        scanf("%d",&list[i]);
     }
 
-    // Now you can read from the file using functions like fscanf() or fgets()
-    char line[100];
-    while (fgets(line, sizeof(line), filePointer)) {
-        printf("%s", line);
+    int largest  = list[0];
+    int second = list[0];
+    for (int j=0 ; j<size ; j++){
+        if (list[i] > largest){
+            list[i] = 0;
+        }
     }
+    for (int j = 0 ; j<size ; j++){
+        if (list[i] > second){
+            second = list[i];
 
-    // Close the file when you're done
-    fclose(filePointer);
-
+        }
+    }
+    printf("%d",second);
     return 0;
 }
