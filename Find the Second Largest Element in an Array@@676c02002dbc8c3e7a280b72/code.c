@@ -12,8 +12,8 @@ int main() {
     int largest  = list[0];
     int second = list[0];
     for (int j=0 ; j<size ; j++){
-        if (list[i] > largest){
-            list[i] = 0;
+        if (list[j] > largest){
+            list[j] = 0;
         }
     }
     for (int j = 0 ; j<size ; j++){
