@@ -10,10 +10,10 @@ int main (void){
         scanf("%d",&list[i]);
     }
     for (int j =0 ; j < size ;j++){
-        if (list[i] %2 ==0){
+        if (list[j] %2 ==0){
             even = even + 1;
         }else{
-            od = odd+1;
+            odd = odd+1;
         }
     }
     printf("%d %d",even,odd);
