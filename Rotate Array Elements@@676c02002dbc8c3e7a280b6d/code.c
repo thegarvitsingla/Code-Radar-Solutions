@@ -11,7 +11,7 @@ int main (void){
         scanf("%d",&list[i]);
     }
     scanf("%d",&positions);
-    for (int j = 0 ; j <= size ; j ++ ){
+    for (int j = 0 ; j < size ; j ++ ){
         int num = list[j];
         printf("%d\n",num);
     }
