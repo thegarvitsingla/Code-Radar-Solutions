@@ -17,13 +17,13 @@ int main (void){
         for (int k = size -1 ; k >  0 ; k--){
             // list[k + 1] = list[k];
             list[k] = list [k-1];
-            
+
 
         }
         list[0] = last;
     }
 
     for (int m = 0; m< size ; m++){
-        printf("%d",list[m]);
+        printf("%d\n",list[m]);
     }
 }
