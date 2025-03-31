@@ -7,7 +7,7 @@ int main (void){
     scanf("%d",&size);
     int list[size];
     int temp;
-    for (int i = 0 ; i <= size ; i++ ){
+    for (int i = 0 ; i < size ; i++ ){
         scanf("%d",&list[i]);
     }
     scanf("%d",&positions);
