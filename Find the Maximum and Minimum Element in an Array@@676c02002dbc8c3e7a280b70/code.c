@@ -14,8 +14,10 @@ int main (void){
         if (list[i] > max){
             max = list[i];
         }
-        if (list[i] < min){
-            min  = list[i];
+        if (list[i] < least){
+            least  = list[i];
         }
     }
+
+    printf("%d %d",least,max);
 }
