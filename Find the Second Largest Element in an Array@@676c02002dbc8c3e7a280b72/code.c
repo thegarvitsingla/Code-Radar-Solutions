@@ -13,7 +13,7 @@ int main() {
     int second = list[0];
     for (int j=0 ; j<size ; j++){
         if (list[j] > largest){
-           largest = list[j]
+           largest = list[j];
             
         }
     }
