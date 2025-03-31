@@ -8,8 +8,7 @@ int main (void){
     int list[size];
     int temp;
     for (int i = 0 ; i <= size ; i++ ){
-        scanf("%d",&temp);
-        list[i] = temp;
+        scanf("%d",&list[i]);
     }
     scanf("%d",&positions);
     for (int j = 0 ; j <= size ; j ++ ){
