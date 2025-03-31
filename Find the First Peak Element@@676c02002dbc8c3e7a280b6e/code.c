@@ -14,6 +14,9 @@ int main (void){
         if (list[i] > list[i-1] && list[i] > list[i +1]){
             peak = list[i];
             break;
+        }else if(list [i] == list[i+1]){
+            peak = -1;
+            
         }
     }
     printf("%d",peak);
