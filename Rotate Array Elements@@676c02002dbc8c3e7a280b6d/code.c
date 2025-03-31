@@ -12,7 +12,7 @@ int main (void){
     }
     scanf("%d",&positions);
     
-    for (int d = 0 ; d < positions ; j++){
+    for (int d = 0 ; d < positions ; d++){
         int last  = list[size-1];
         for (int k = 0 ; k < size ; k++){
             list[k + 1] = list[k];
