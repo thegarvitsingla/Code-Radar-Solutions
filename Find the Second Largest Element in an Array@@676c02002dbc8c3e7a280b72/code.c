@@ -14,7 +14,7 @@ int main() {
     for (int j=0 ; j<size ; j++){
         if (list[j] > largest){
             list[j] = 0;
-            break
+            break;
         }
     }
     for (int j = 0 ; j<size ; j++){
