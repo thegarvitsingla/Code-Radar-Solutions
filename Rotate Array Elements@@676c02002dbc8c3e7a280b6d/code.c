@@ -14,7 +14,7 @@ int main (void){
     scanf("%d",&positions);
     for (int j = 0 ; j <= size ; j ++ ){
         int num = list[j];
-        printf("%d",num);
+        printf("%d\n",num);
     }
     printf("%d positiond is ",positions);
 }
