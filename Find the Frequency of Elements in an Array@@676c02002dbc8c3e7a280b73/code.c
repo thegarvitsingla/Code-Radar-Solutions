@@ -14,12 +14,12 @@ int main (void)
     for (int k = 0 ; k<size ; k++){
         temp = list[k];
         counter = 0;
-        if (temp == "\0") continue;
+        if (temp == -1) continue;
 
         for (int l = k ; l<size ; l++){
             if (temp == list[l]){
                 counter++;
-                list[l]="\0";
+                list[l]=-1;
             }
         }
 
