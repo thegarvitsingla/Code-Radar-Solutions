@@ -8,7 +8,7 @@ int main (void)
     int temp;
     int counter = 0;
     for (int i = 0; i <size ; i++){
-        scanf("%d",&size[i]);
+        scanf("%d",&list[i]);
     }
 
     for (int k = 0 ; k<size ; k++){
