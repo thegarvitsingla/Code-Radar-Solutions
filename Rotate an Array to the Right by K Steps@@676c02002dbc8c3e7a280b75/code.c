@@ -24,6 +24,6 @@ int main (void){
     }
 
     for (int m = 0; m< size ; m++){
-        printf("%d\n",list[m]);
+        printf("%d",list[m]);
     }
 }
